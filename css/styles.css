@@ -53,6 +53,7 @@ h6 {
 input {
   padding: 0;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -65,18 +66,18 @@ input {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+
 .hero {
-  margin: 0 auto;
   background-color: var(--color-bgd);
   background-image: var(--bgd-gradient), url(../images/studio/hero-bgd-mob.jpg);
   background-repeat: no-repeat;
@@ -97,7 +98,7 @@ input {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  max-width: 290px;
+  max-width: 320px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-text-akcent);
@@ -170,8 +171,8 @@ input {
 .team {
   background: var(--color-btn-bgd);
 }
-.container.special {
-  width: 264px;
+.team > .special {
+  width: 294px;
 }
 .team-list {
   display: flex;
@@ -260,6 +261,7 @@ input {
   align-items: center;
   gap: 72px;
 }
+
 .footer-logo {
   color: var(--color-footer-logo);
 }
@@ -312,7 +314,7 @@ input {
   background: var(--color-soc-linc-akcent);
 }
 .footer-form {
-  max-width: 290px;
+  width: 100%;
 }
 
 .footer-form-input {
@@ -374,12 +376,6 @@ input {
   .container {
     width: 398px;
   }
-  .hero-title {
-    max-width: 320px;
-  }
-  .footer-form {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -430,6 +426,21 @@ input {
   }
   .customers-item {
     width: calc((100% - 24px * 2) / 3);
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .footer-logo-container {
+    width: 264px;
+    margin: 0;
+  }
+
+  .footer-form-input {
+    width: 264px;
   }
 }
 
